@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar - CHILL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('../images/bg-cinema2.jpg');">
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div
+        class="relative w-full max-w-md bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl p-10 text-white shadow-xl">
+
+        <div class="flex items-center justify-center mb-6">
+            <img src="../images/logo-chill.png" alt="logo" class="w-10 mr-2">
+            <h1 class="text-4xl font-extrabold tracking-wide">CHILL</h1>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-center mb-1">Daftar</h2>
+        <p class="text-center text-gray-300 text-sm mb-8">Selamat datang!</p>
+
+
+        <form class="space-y-5">
+
+            <div>
+                <label for="username" class="text-sm mb-1 block">Username</label>
+                <input id="username" type="text" name="username"
+                    class="w-full bg-white/10 border border-gray-400/20 rounded-full px-4 py-3 placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                    placeholder="Masukkan username" />
+            </div>
+
+            <div>
+                <label for="password" class="text-sm mb-1 block">Kata Sandi</label>
+
+                <div class="relative">
+                    <input id="password" type="password" name="password"
+                        class="w-full bg-white/10 border border-gray-400/20 rounded-full px-4 py-3 pr-12 placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                        placeholder="Masukkan kata sandi" />
+
+                    <img src="../images/icon-eye.png" alt="icon-eye"
+                        class="w-5 absolute right-4 top-1/2 -translate-y-1/2 opacity-60 cursor-pointer hover:opacity-100">
+                </div>
+            </div>
+
+            <div>
+                <label for="confirm-password" class="text-sm mb-1 block">Konfirmasi Kata Sandi</label>
+
+                <div class="relative">
+                    <input id="confirm-password" type="password" name="confirm-password"
+                        class="w-full bg-white/10 border border-gray-400/20 rounded-full px-4 py-3 pr-12 placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                        placeholder="Masukkan kata sandi" />
+
+                    <img src="../images/icon-eye.png" alt="icon-eye"
+                        class="w-5 absolute right-4 top-1/2 -translate-y-1/2 opacity-60 cursor-pointer hover:opacity-100">
+                </div>
+
+                <div class="flex text-sm mt-2">
+                    <span class="text-gray-300">Sudah punya akun?</span>
+                    <a href="../index.html" class="ml-1 text-white hover:underline">Masuk</a>
+                </div>
+            </div>
+
+            <button class="w-full bg-white/20 text-white py-3 rounded-full hover:bg-white/30 transition font-semibold">
+                Daftar
+            </button>
+
+            <div class="flex items-center gap-3 my-4">
+                <div class="flex-1 h-px bg-white/20"></div>
+                <div class="text-sm text-gray-300">Atau</div>
+                <div class="flex-1 h-px bg-white/20"></div>
+            </div>
+
+            <button
+                class="w-full flex items-center justify-center gap-3 bg-white/10 border border-white/20 py-3 rounded-full text-sm hover:bg-white/20 transition">
+
+                <img src="../images/google-logo.png" alt="google-logo" class="w-5">
+                Daftar dengan Google
+            </button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
